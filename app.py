@@ -18,7 +18,7 @@ ENCRYPTION_KEY = Fernet.generate_key()
 cipher_suite = Fernet(ENCRYPTION_KEY)
 
 # Import helper functions
-from helper import (
+from utils.helper import (
     run_complete_pipeline,
     decrypt_data,
     get_database_data,

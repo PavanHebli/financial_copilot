@@ -145,3 +145,4 @@ $RECYCLE.BIN/
 test_visualization.py
 requirements_old.txt
 generate_requirements.sh
+database.db
