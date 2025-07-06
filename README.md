@@ -63,7 +63,7 @@ streamlit run app.py
 
 ### 4. Configure
 
-- **API Keys:** Enter your OpenAI or Groq API key in the sidebar after launch.
+- **API Keys:** Enter your OpenAI(Recommended) or Groq API key in the sidebar after launch.
 - **Import Data:** Use the UI to upload your CSV (see [Data Format](#data-format) below).
 - **Start Chatting:** Ask questions and visualize your data.
 
@@ -71,13 +71,14 @@ streamlit run app.py
 
 ## Data Format
 
-The app expects your data in CSV format with the following columns (example):
+The app currently uses CSV format with the following columns (example):
 
 ```csv
 customer_id,credit_score,country,gender,age,tenure,balance,products_number,credit_card,active_member,estimated_salary,churn
 15634602,619,France,Female,42,2,0,1,1,1,101348.88,1
 ...
 ```
+if you upload an new CSV provide a detailed explanation of your data (e.g. what does each column mean), example is provided in the code.
 
 **Note:** Additional synthetic fields (e.g., email, phone, join_date) will be generated during the import pipeline for demonstration purposes.
 
@@ -100,8 +101,8 @@ financial-copilot/
 
 ## Customization
 
-- **Adding Chart Types:** Edit `plot_chart()` in `utils/plots.py` to add new chart types.
-- **Extending Data Fields:** Update data processing logic in `app.py` or `utils/data.py`.
+- **Adding Chart Types:** Edit `plot_chart()` in `utils/plotting.py` to add new chart types.
+- **Extending Data Fields:** Update data processing logic in `app.py`.
 
 ---
 
